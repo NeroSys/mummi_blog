@@ -1,6 +1,7 @@
 <?php
 
 use yii\grid\GridView;
+use yii\helpers\Html;
 ?>
 
 <!-- CONTAIN START -->
@@ -34,6 +35,10 @@ use yii\grid\GridView;
                         </div>
                     </div>
                     <div class="m-0">
+
+                        <p>
+                            <?= Html::a('Create Article', ['create'], ['class' => 'btn btn-success']) ?>
+                        </p>
 
                         <?= GridView::widget([
                             'dataProvider' => $dataProvider,
